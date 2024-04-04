@@ -9,13 +9,11 @@ import Foundation
 import Differentiator
 
 // MARK: - CocktailsResponse
-
 struct CocktailsResponse: Decodable {
     let drinks: [Cocktail]
 }
 
 // MARK: - Cocktail
-
 struct Cocktail: Decodable, IdentifiableType, Equatable {
     
     typealias Identity = String

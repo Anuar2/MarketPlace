@@ -31,6 +31,9 @@
 		5E8008242BBF1E2500C52C02 /* CocktailsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008232BBF1E2500C52C02 /* CocktailsAPI.swift */; };
 		5E8008272BBF1F2C00C52C02 /* DrinkCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008262BBF1F2C00C52C02 /* DrinkCategory.swift */; };
 		5E80082A2BBF20AE00C52C02 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008292BBF20AE00C52C02 /* BaseService.swift */; };
+		5E80082F2BBF22D800C52C02 /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E80082E2BBF22D800C52C02 /* BaseViewControllerProtocol.swift */; };
+		5E8008312BBF239B00C52C02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008302BBF239B00C52C02 /* BaseViewController.swift */; };
+		5E8008332BBF271A00C52C02 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008322BBF271A00C52C02 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		5E8008232BBF1E2500C52C02 /* CocktailsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsAPI.swift; sourceTree = "<group>"; };
 		5E8008262BBF1F2C00C52C02 /* DrinkCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCategory.swift; sourceTree = "<group>"; };
 		5E8008292BBF20AE00C52C02 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		5E80082E2BBF22D800C52C02 /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
+		5E8008302BBF239B00C52C02 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5E8008322BBF271A00C52C02 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +98,13 @@
 		5E8007E22BBF143600C52C02 /* MarketPlace */ = {
 			isa = PBXGroup;
 			children = (
+				5E80082D2BBF22BC00C52C02 /* Extension */,
+				5E80082C2BBF221000C52C02 /* AppDelegate */,
 				5E8008112BBF18BB00C52C02 /* Networking Layer */,
 				5E8007F72BBF177700C52C02 /* Modules */,
-				5E8007E32BBF143600C52C02 /* AppDelegate.swift */,
-				5E8007E52BBF143600C52C02 /* SceneDelegate.swift */,
 				5E8007EC2BBF143700C52C02 /* Assets.xcassets */,
 				5E8007EE2BBF143700C52C02 /* LaunchScreen.storyboard */,
-				5E8007F12BBF143700C52C02 /* Info.plist */,
+				5E80082B2BBF21DF00C52C02 /* Common */,
 			);
 			path = MarketPlace;
 			sourceTree = "<group>";
@@ -178,6 +184,33 @@
 				5E8008292BBF20AE00C52C02 /* BaseService.swift */,
 			);
 			path = ServiceObj;
+			sourceTree = "<group>";
+		};
+		5E80082B2BBF21DF00C52C02 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5E8007F12BBF143700C52C02 /* Info.plist */,
+				5E8008322BBF271A00C52C02 /* Theme.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5E80082C2BBF221000C52C02 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5E8007E32BBF143600C52C02 /* AppDelegate.swift */,
+				5E8007E52BBF143600C52C02 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5E80082D2BBF22BC00C52C02 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5E80082E2BBF22D800C52C02 /* BaseViewControllerProtocol.swift */,
+				5E8008302BBF239B00C52C02 /* BaseViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,11 +306,14 @@
 			files = (
 				5E8007E82BBF143600C52C02 /* ViewController.swift in Sources */,
 				5E8008242BBF1E2500C52C02 /* CocktailsAPI.swift in Sources */,
+				5E8008312BBF239B00C52C02 /* BaseViewController.swift in Sources */,
 				5E8008192BBF1A3300C52C02 /* ServiceProvider.swift in Sources */,
 				5E8007E42BBF143600C52C02 /* AppDelegate.swift in Sources */,
 				5E8008272BBF1F2C00C52C02 /* DrinkCategory.swift in Sources */,
 				5E8008222BBF1B8A00C52C02 /* Cocktails.swift in Sources */,
+				5E80082F2BBF22D800C52C02 /* BaseViewControllerProtocol.swift in Sources */,
 				5E8007E62BBF143600C52C02 /* SceneDelegate.swift in Sources */,
+				5E8008332BBF271A00C52C02 /* Theme.swift in Sources */,
 				5E8008162BBF199F00C52C02 /* ServiceProtocol.swift in Sources */,
 				5E80082A2BBF20AE00C52C02 /* BaseService.swift in Sources */,
 			);
