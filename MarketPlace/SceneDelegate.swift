@@ -20,12 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
         
       
-        let vc = ViewController()
-        let nc = UINavigationController(rootViewController: vc)
-        nc.navigationBar.prefersLargeTitles = false
-        nc.navigationItem.largeTitleDisplayMode = .inline
-        vc.title = "Cocktails"
-        window?.rootViewController = nc
+        let viewController = ViewController()
+        let navController = UINavigationController(rootViewController: viewController)
+        navController.navigationBar.prefersLargeTitles = false
+        navController.navigationItem.largeTitleDisplayMode = .inline
+        navController.title = "Cocktails"
+        window?.rootViewController = navController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
