@@ -9,6 +9,8 @@ import Foundation
 import RxRelay
 import RxSwift
 
+// MARK: - MarketPlaceViewModel
+
 final class MarketPlaceViewModel: ViewModel, ViewModelType {
     
     private var alcCocktailsSectionsRelay: PublishRelay<[CocktailSection]> = .init()

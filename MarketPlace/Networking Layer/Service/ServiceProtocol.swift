@@ -14,6 +14,8 @@ protocol CocktailsServiceProtocol {
     func getDetails(of cocktail: Cocktail) -> Single<CocktailsResponse>
 }
 
+// MARK: - CocktailsService
+
 final class CocktailsService: BaseService<CocktailsAPI>, CocktailsServiceProtocol {
     
     func getCocktails(with type: DrinkCategory) -> RxSwift.Single<CocktailsResponse> {

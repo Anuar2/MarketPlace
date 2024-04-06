@@ -44,6 +44,7 @@
 		5E8008492BC07E1500C52C02 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008482BC07E1500C52C02 /* CollectionModel.swift */; };
 		5E80084B2BC086BD00C52C02 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E80084A2BC086BD00C52C02 /* NiblessViewController.swift */; };
 		5EDB68C32BC12415008724FE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5EDB68C22BC12415008724FE /* Lottie */; };
+		5EDB68C52BC14613008724FE /* CocktailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDB68C42BC14613008724FE /* CocktailDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		5E8008462BC07DD200C52C02 /* UIImageView+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extenstion.swift"; sourceTree = "<group>"; };
 		5E8008482BC07E1500C52C02 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
 		5E80084A2BC086BD00C52C02 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		5EDB68C42BC14613008724FE /* CocktailDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				5E8007E72BBF143600C52C02 /* ViewController.swift */,
+				5EDB68C42BC14613008724FE /* CocktailDetailViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				5E8008452BC07D2C00C52C02 /* CocktailsCollectionViewCell.swift in Sources */,
 				5E8007E62BBF143600C52C02 /* SceneDelegate.swift in Sources */,
 				5E8008382BC001F900C52C02 /* CocktailsView.swift in Sources */,
+				5EDB68C52BC14613008724FE /* CocktailDetailViewController.swift in Sources */,
 				5E80083A2BC0040500C52C02 /* ViewModelProtocol.swift in Sources */,
 				5E8008332BBF271A00C52C02 /* Theme.swift in Sources */,
 				5E8008472BC07DD200C52C02 /* UIImageView+Extenstion.swift in Sources */,

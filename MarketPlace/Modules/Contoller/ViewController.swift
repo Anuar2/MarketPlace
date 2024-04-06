@@ -84,6 +84,9 @@ final class ViewController: BaseViewController {
  
     override func viewDidLoad() {
         configureDataSource()
+        
+        alcCocktailCollectionView.delegate = self
+        nonAlcCocktailCollectionView.delegate = self
 
         super.viewDidLoad()
 
@@ -109,6 +112,7 @@ final class ViewController: BaseViewController {
     }
     
     override func configureView() {
+        view.backgroundColor = .white
         [navigationTitle, searchBar, segmentedControl, scrollView].forEach { view.addSubview($0)}
     }
     
@@ -197,6 +201,19 @@ private extension ViewController {
 extension ViewController: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         segmentedControl.selectedSegmentIndex = Int(round(scrollView.contentOffset.x / view.frame.width))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cocktail: Cocktail
+        if collectionView == alcCocktailCollectionView {
+            cocktail = alcCocktailsDataSource[indexPath]
+        } else {
+            cocktail = nonAlcCocktailsDataSource[indexPath]
+        }
+        
+        let detailViewController = CocktailDetailViewController(cocktail: cocktail)
+        
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 

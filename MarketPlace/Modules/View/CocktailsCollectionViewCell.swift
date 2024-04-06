@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - CocktailsCollectionViewCell
+
 final class CocktailsCollectionViewCell: UICollectionViewCell {
     
     private let cocktailsView: CocktailsView = .init(frame: .zero)

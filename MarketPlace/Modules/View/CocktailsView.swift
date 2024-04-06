@@ -8,6 +8,8 @@
 import UIKit
 import SnapKit
 
+// MARK: - CocktailsView
+
 final class CocktailsView: UIImageView {
     private let label: UILabel = {
         let label = UILabel()

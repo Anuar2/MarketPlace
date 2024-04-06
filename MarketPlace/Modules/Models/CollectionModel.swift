@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - CollectionModel
+
 struct CollectionModel {
     let imageURL: String?
     let title: String?

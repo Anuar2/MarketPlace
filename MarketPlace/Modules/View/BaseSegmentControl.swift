@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - BaseSegmentControl
+
 final class BaseSegmentControl: UISegmentedControl {
     
     init(items: [String]) {
