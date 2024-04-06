@@ -205,13 +205,15 @@ extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cocktail: Cocktail
+        var isAlhocolic = false
         if collectionView == alcCocktailCollectionView {
             cocktail = alcCocktailsDataSource[indexPath]
+            isAlhocolic = true
         } else {
             cocktail = nonAlcCocktailsDataSource[indexPath]
         }
         
-        let detailViewController = CocktailDetailViewController(cocktail: cocktail)
+        let detailViewController = CocktailDetailViewController(cocktail: cocktail, isAlcoholic: isAlhocolic)
         
         navigationController?.pushViewController(detailViewController, animated: true)
     }
