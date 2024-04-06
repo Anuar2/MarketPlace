@@ -6,25 +6,30 @@
 //
 
 import UIKit
+import RxSwift
 
 // MARK: - BaseViewController
-class BaseViewController: UIViewController {
+class BaseViewController: NiblessViewController {
     
+    let disposeBag: DisposeBag = .init()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureView()
-        addSubviews()
-        setupLayout()
+        commonInit()
     }
-}
-
-extension BaseViewController: BaseViewControllerProtocol {
+    
+    func commonInit() {
+        configureView()
+        setupLayout()
+        bind()
+    }
     
     func configureView() {
         view.backgroundColor = .white
     }
-    
-    func addSubviews() { }
-    
+        
     func setupLayout() { }
+    
+    func bind() { }
+
 }

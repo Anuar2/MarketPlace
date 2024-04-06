@@ -8,19 +8,13 @@
 import UIKit
 import SnapKit
 
-final class CardListView: UIImageView {
+final class CocktailsView: UIImageView {
     private let label: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 16.0, weight: .regular)
         return label
     }()
-    
-    enum Constant {
-        enum Spacing {
-            static var space_8: CGFloat = 8.0
-        }
-    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,7 +33,7 @@ final class CardListView: UIImageView {
     private func configureLayouts() {
         label.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.left.right.equalToSuperview().inset(Constant.Spacing.space_8)
+            $0.left.right.equalToSuperview().inset(8)
         }
     }
     

@@ -30,6 +30,13 @@ struct Cocktail: Decodable, IdentifiableType, Equatable {
     
     /// Если появится кейс с camelCase, можно использовать  keyDecodingStrategy = .convertFromSnakeCase внутри Decoder
 
+    enum CodingKeys: String, CodingKey {
+        case id = "idDrink"
+        case title = "strDrink"
+        case imageStrURL = "strDrinkThumb"
+        case strGlass, strAlcoholic
+    }
+    
     static func == (lhs: Cocktail, rhs: Cocktail) -> Bool {
         lhs.identity == rhs.identity
     }

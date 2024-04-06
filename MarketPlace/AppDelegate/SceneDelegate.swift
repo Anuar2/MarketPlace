@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Moya
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -20,11 +21,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
         
       
-        let viewController = ViewController()
+        let provider: ServiceProvider<CocktailsAPI> = .init(plugins: [NetworkLoggerPlugin(configuration: .init(logOptions: .verbose))])
+        
+        let cocktailService: CocktailsServiceProtocol = CocktailsService(provider: provider)
+        
+        let viewModel: MarketPlaceViewModel = .init(cocktailService: cocktailService)
+        
+        let viewController = ViewController(viewModel: viewModel)
         let navController = UINavigationController(rootViewController: viewController)
         navController.navigationBar.prefersLargeTitles = false
         navController.navigationItem.largeTitleDisplayMode = .inline
-        navController.title = "Cocktails"
         window?.rootViewController = navController
     }
 

@@ -31,11 +31,19 @@
 		5E8008242BBF1E2500C52C02 /* CocktailsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008232BBF1E2500C52C02 /* CocktailsAPI.swift */; };
 		5E8008272BBF1F2C00C52C02 /* DrinkCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008262BBF1F2C00C52C02 /* DrinkCategory.swift */; };
 		5E80082A2BBF20AE00C52C02 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008292BBF20AE00C52C02 /* BaseService.swift */; };
-		5E80082F2BBF22D800C52C02 /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E80082E2BBF22D800C52C02 /* BaseViewControllerProtocol.swift */; };
 		5E8008312BBF239B00C52C02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008302BBF239B00C52C02 /* BaseViewController.swift */; };
 		5E8008332BBF271A00C52C02 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008322BBF271A00C52C02 /* Theme.swift */; };
 		5E8008362BBFFFC400C52C02 /* BaseSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008352BBFFFC400C52C02 /* BaseSegmentControl.swift */; };
 		5E8008382BC001F900C52C02 /* CocktailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008372BC001F900C52C02 /* CocktailsView.swift */; };
+		5E80083A2BC0040500C52C02 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008392BC0040500C52C02 /* ViewModelProtocol.swift */; };
+		5E80083C2BC0044A00C52C02 /* ViewModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E80083B2BC0044A00C52C02 /* ViewModel+Extension.swift */; };
+		5E8008402BC0782900C52C02 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E80083F2BC0782900C52C02 /* ViewModel.swift */; };
+		5E8008432BC07ADC00C52C02 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 5E8008422BC07ADC00C52C02 /* Then */; };
+		5E8008452BC07D2C00C52C02 /* CocktailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008442BC07D2C00C52C02 /* CocktailsCollectionViewCell.swift */; };
+		5E8008472BC07DD200C52C02 /* UIImageView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008462BC07DD200C52C02 /* UIImageView+Extenstion.swift */; };
+		5E8008492BC07E1500C52C02 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8008482BC07E1500C52C02 /* CollectionModel.swift */; };
+		5E80084B2BC086BD00C52C02 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E80084A2BC086BD00C52C02 /* NiblessViewController.swift */; };
+		5EDB68C32BC12415008724FE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5EDB68C22BC12415008724FE /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,11 +60,17 @@
 		5E8008232BBF1E2500C52C02 /* CocktailsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsAPI.swift; sourceTree = "<group>"; };
 		5E8008262BBF1F2C00C52C02 /* DrinkCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCategory.swift; sourceTree = "<group>"; };
 		5E8008292BBF20AE00C52C02 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
-		5E80082E2BBF22D800C52C02 /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
 		5E8008302BBF239B00C52C02 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5E8008322BBF271A00C52C02 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		5E8008352BBFFFC400C52C02 /* BaseSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSegmentControl.swift; sourceTree = "<group>"; };
 		5E8008372BC001F900C52C02 /* CocktailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsView.swift; sourceTree = "<group>"; };
+		5E8008392BC0040500C52C02 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		5E80083B2BC0044A00C52C02 /* ViewModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Extension.swift"; sourceTree = "<group>"; };
+		5E80083F2BC0782900C52C02 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5E8008442BC07D2C00C52C02 /* CocktailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		5E8008462BC07DD200C52C02 /* UIImageView+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extenstion.swift"; sourceTree = "<group>"; };
+		5E8008482BC07E1500C52C02 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
+		5E80084A2BC086BD00C52C02 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +81,9 @@
 				5E8008022BBF17F100C52C02 /* RxRelay in Frameworks */,
 				5E80081F2BBF1B3C00C52C02 /* RxDataSources in Frameworks */,
 				5E8008002BBF17F100C52C02 /* RxCocoa-Dynamic in Frameworks */,
+				5E8008432BC07ADC00C52C02 /* Then in Frameworks */,
 				5E80080C2BBF18B000C52C02 /* Moya in Frameworks */,
+				5EDB68C32BC12415008724FE /* Lottie in Frameworks */,
 				5E8008102BBF18B000C52C02 /* RxMoya in Frameworks */,
 				5E80081D2BBF1B3C00C52C02 /* Differentiator in Frameworks */,
 				5E80080E2BBF18B000C52C02 /* ReactiveMoya in Frameworks */,
@@ -116,9 +132,10 @@
 		5E8007F72BBF177700C52C02 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5E80083E2BC0781C00C52C02 /* ViewModel */,
+				5E80083D2BC077F600C52C02 /* Contoller */,
 				5E8008342BBFFFAE00C52C02 /* View */,
 				5E8008252BBF1EC200C52C02 /* Models */,
-				5E8007E72BBF143600C52C02 /* ViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -179,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				5E8008262BBF1F2C00C52C02 /* DrinkCategory.swift */,
+				5E8008482BC07E1500C52C02 /* CollectionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,8 +230,11 @@
 		5E80082D2BBF22BC00C52C02 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5E80082E2BBF22D800C52C02 /* BaseViewControllerProtocol.swift */,
 				5E8008302BBF239B00C52C02 /* BaseViewController.swift */,
+				5E8008392BC0040500C52C02 /* ViewModelProtocol.swift */,
+				5E80083B2BC0044A00C52C02 /* ViewModel+Extension.swift */,
+				5E8008462BC07DD200C52C02 /* UIImageView+Extenstion.swift */,
+				5E80084A2BC086BD00C52C02 /* NiblessViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -223,8 +244,25 @@
 			children = (
 				5E8008352BBFFFC400C52C02 /* BaseSegmentControl.swift */,
 				5E8008372BC001F900C52C02 /* CocktailsView.swift */,
+				5E8008442BC07D2C00C52C02 /* CocktailsCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5E80083D2BC077F600C52C02 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				5E8007E72BBF143600C52C02 /* ViewController.swift */,
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		5E80083E2BC0781C00C52C02 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E80083F2BC0782900C52C02 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +295,8 @@
 				5E80080F2BBF18B000C52C02 /* RxMoya */,
 				5E80081C2BBF1B3C00C52C02 /* Differentiator */,
 				5E80081E2BBF1B3C00C52C02 /* RxDataSources */,
+				5E8008422BC07ADC00C52C02 /* Then */,
+				5EDB68C22BC12415008724FE /* Lottie */,
 			);
 			productName = MarketPlace;
 			productReference = 5E8007E02BBF143600C52C02 /* MarketPlace.app */;
@@ -291,6 +331,8 @@
 				5E8008032BBF187100C52C02 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				5E8008082BBF18B000C52C02 /* XCRemoteSwiftPackageReference "Moya" */,
 				5E80081B2BBF1B3C00C52C02 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				5E8008412BC07ADC00C52C02 /* XCRemoteSwiftPackageReference "Then" */,
+				5EDB68C12BC12415008724FE /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 5E8007E12BBF143600C52C02 /* Products */;
 			projectDirPath = "";
@@ -324,12 +366,18 @@
 				5E8008192BBF1A3300C52C02 /* ServiceProvider.swift in Sources */,
 				5E8007E42BBF143600C52C02 /* AppDelegate.swift in Sources */,
 				5E8008362BBFFFC400C52C02 /* BaseSegmentControl.swift in Sources */,
+				5E8008402BC0782900C52C02 /* ViewModel.swift in Sources */,
+				5E80083C2BC0044A00C52C02 /* ViewModel+Extension.swift in Sources */,
 				5E8008272BBF1F2C00C52C02 /* DrinkCategory.swift in Sources */,
+				5E8008492BC07E1500C52C02 /* CollectionModel.swift in Sources */,
 				5E8008222BBF1B8A00C52C02 /* Cocktails.swift in Sources */,
-				5E80082F2BBF22D800C52C02 /* BaseViewControllerProtocol.swift in Sources */,
+				5E8008452BC07D2C00C52C02 /* CocktailsCollectionViewCell.swift in Sources */,
 				5E8007E62BBF143600C52C02 /* SceneDelegate.swift in Sources */,
 				5E8008382BC001F900C52C02 /* CocktailsView.swift in Sources */,
+				5E80083A2BC0040500C52C02 /* ViewModelProtocol.swift in Sources */,
 				5E8008332BBF271A00C52C02 /* Theme.swift in Sources */,
+				5E8008472BC07DD200C52C02 /* UIImageView+Extenstion.swift in Sources */,
+				5E80084B2BC086BD00C52C02 /* NiblessViewController.swift in Sources */,
 				5E8008162BBF199F00C52C02 /* ServiceProtocol.swift in Sources */,
 				5E80082A2BBF20AE00C52C02 /* BaseService.swift in Sources */,
 			);
@@ -473,11 +521,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87SSGGH7S6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MarketPlace/Info.plist;
+				INFOPLIST_FILE = MarketPlace/Common/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -489,6 +538,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = marketPlace.MarketPlace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,11 +550,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87SSGGH7S6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MarketPlace/Info.plist;
+				INFOPLIST_FILE = MarketPlace/Common/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -516,6 +567,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = marketPlace.MarketPlace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,6 +628,22 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.2;
+			};
+		};
+		5E8008412BC07ADC00C52C02 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		5EDB68C12BC12415008724FE /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -645,6 +713,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5E80081B2BBF1B3C00C52C02 /* XCRemoteSwiftPackageReference "RxDataSources" */;
 			productName = RxDataSources;
+		};
+		5E8008422BC07ADC00C52C02 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E8008412BC07ADC00C52C02 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		5EDB68C22BC12415008724FE /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EDB68C12BC12415008724FE /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
