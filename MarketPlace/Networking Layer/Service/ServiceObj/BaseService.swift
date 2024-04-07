@@ -9,6 +9,7 @@ import Moya
 import RxSwift
 
 // MARK: - BaseService
+
 class BaseService<T: TargetType> {
     
     private let provider: ServiceProvider<T>

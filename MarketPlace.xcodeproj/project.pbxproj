@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E8007E42BBF143600C52C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8007E32BBF143600C52C02 /* AppDelegate.swift */; };
 		5E8007E62BBF143600C52C02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8007E52BBF143600C52C02 /* SceneDelegate.swift */; };
-		5E8007E82BBF143600C52C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8007E72BBF143600C52C02 /* ViewController.swift */; };
+		5E8007E82BBF143600C52C02 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8007E72BBF143600C52C02 /* MainViewController.swift */; };
 		5E8007ED2BBF143700C52C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8007EC2BBF143700C52C02 /* Assets.xcassets */; };
 		5E8007F02BBF143700C52C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8007EE2BBF143700C52C02 /* LaunchScreen.storyboard */; };
 		5E8007FA2BBF17F100C52C02 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 5E8007F92BBF17F100C52C02 /* RxBlocking */; };
@@ -51,7 +51,7 @@
 		5E8007E02BBF143600C52C02 /* MarketPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8007E32BBF143600C52C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E8007E52BBF143600C52C02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E8007E72BBF143600C52C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E8007E72BBF143600C52C02 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5E8007EC2BBF143700C52C02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E8007EF2BBF143700C52C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E8007F12BBF143700C52C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -254,7 +254,7 @@
 		5E80083D2BC077F600C52C02 /* Contoller */ = {
 			isa = PBXGroup;
 			children = (
-				5E8007E72BBF143600C52C02 /* ViewController.swift */,
+				5E8007E72BBF143600C52C02 /* MainViewController.swift */,
 				5EDB68C42BC14613008724FE /* CocktailDetailViewController.swift */,
 			);
 			path = Contoller;
@@ -363,7 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8007E82BBF143600C52C02 /* ViewController.swift in Sources */,
+				5E8007E82BBF143600C52C02 /* MainViewController.swift in Sources */,
 				5E8008242BBF1E2500C52C02 /* CocktailsAPI.swift in Sources */,
 				5E8008312BBF239B00C52C02 /* BaseViewController.swift in Sources */,
 				5E8008192BBF1A3300C52C02 /* ServiceProvider.swift in Sources */,

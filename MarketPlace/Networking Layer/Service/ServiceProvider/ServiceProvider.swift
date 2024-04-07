@@ -10,6 +10,7 @@ import Moya
 import RxSwift
 
 // MARK: - ServiceProvider
+
 final class ServiceProvider<Target>: MoyaProvider<Target> where Target: Moya.TargetType {
     
     func request<T: Decodable>(_ target: Target) -> Single<T> {

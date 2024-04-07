@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let viewModel: MarketPlaceViewModel = .init(cocktailService: cocktailService)
         
-        let viewController = ViewController(viewModel: viewModel)
+        let viewController = MainViewController(viewModel: viewModel)
         let navController = UINavigationController(rootViewController: viewController)
         navController.navigationBar.prefersLargeTitles = false
         navController.navigationItem.largeTitleDisplayMode = .inline

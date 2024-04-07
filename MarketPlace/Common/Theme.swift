@@ -8,6 +8,7 @@
 import UIKit
 
 // MARK: - Theme
+
 enum Theme {
     case light
     case dark

@@ -9,6 +9,7 @@ import Foundation
 import RxSwift
 
 // MARK: - ServiceProtocol
+
 protocol CocktailsServiceProtocol {
     func getCocktails(with type: DrinkCategory) -> Single<CocktailsResponse>
     func getDetails(of cocktail: Cocktail) -> Single<CocktailsResponse>

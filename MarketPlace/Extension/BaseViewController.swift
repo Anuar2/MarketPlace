@@ -9,6 +9,7 @@ import UIKit
 import RxSwift
 
 // MARK: - BaseViewController
+
 class BaseViewController: NiblessViewController {
     
     let disposeBag: DisposeBag = .init()

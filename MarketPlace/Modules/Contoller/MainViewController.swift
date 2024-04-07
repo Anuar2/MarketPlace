@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  MarketPlace
 //
 //  Created by Anuar Orazbekov on 04.04.2024.
@@ -14,12 +14,13 @@ import RxSwift
 import Lottie
 
 // MARK: - Section
+
 typealias CocktailSection = AnimatableSectionModel<String, Cocktail>
 
-// MARK: - ViewController
+// MARK: - MainViewController
 
-final class ViewController: BaseViewController {
-
+final class MainViewController: BaseViewController {
+    
     private lazy var navigationTitle = UILabel().then {
         $0.text = "Cocktails"
         $0.numberOfLines = 0
@@ -38,7 +39,7 @@ final class ViewController: BaseViewController {
         $0.isPagingEnabled = true
         $0.delegate = self
     }
-       
+    
     private lazy var layout = UICollectionViewFlowLayout().then {
         $0.scrollDirection = .vertical
         $0.minimumLineSpacing = 8
@@ -60,14 +61,14 @@ final class ViewController: BaseViewController {
         $0.showsVerticalScrollIndicator = false
         $0.register(CocktailsCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(CocktailsCollectionViewCell.self))
     }
-
+    
     private lazy var nonAlcCocktailCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout).then {
         $0.backgroundColor = .clear
         $0.showsVerticalScrollIndicator = false
         $0.register(CocktailsCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(CocktailsCollectionViewCell.self))
     }
-
-       
+    
+    
     private var alcCocktailsDataSource: RxCollectionViewSectionedAnimatedDataSource<CocktailSection>!
     
     private var nonAlcCocktailsDataSource: RxCollectionViewSectionedAnimatedDataSource<CocktailSection>!
@@ -81,21 +82,21 @@ final class ViewController: BaseViewController {
     init(viewModel: MarketPlaceViewModel) {
         self.viewModel = viewModel
     }
- 
+    
     override func viewDidLoad() {
         configureDataSource()
         
         alcCocktailCollectionView.delegate = self
         nonAlcCocktailCollectionView.delegate = self
-
+        
         super.viewDidLoad()
-
+        
         configureViews()
     }
     
     override func bind() {
         let searchQueryObservable = searchBar.rx.text.orEmpty.asObservable()
-
+        
         let output = viewModel.transform(
             input: .init(
                 fetchCocktails: fetchCocktailsSubject.asObserver(), searchQuery: searchQueryObservable
@@ -142,7 +143,7 @@ final class ViewController: BaseViewController {
     }
 }
 
-private extension ViewController {
+private extension MainViewController {
     
     func configureViews() {
         segmentedControl.addTarget(self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
@@ -159,23 +160,23 @@ private extension ViewController {
         }
     }
     
-    private func configureDataSource() {
+    func configureDataSource() {
         alcCocktailsDataSource = RxCollectionViewSectionedAnimatedDataSource<CocktailSection>(
             configureCell: configureCell
         )
-
+        
         nonAlcCocktailsDataSource = RxCollectionViewSectionedAnimatedDataSource<CocktailSection>(
             configureCell: configureCell
         )
     }
     
-    private func configureCell(dataSource: CollectionViewSectionedDataSource<CocktailSection>, collectionView: UICollectionView, indexPath: IndexPath, item: Cocktail) -> UICollectionViewCell {
-         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(CocktailsCollectionViewCell.self), for: indexPath) as? CocktailsCollectionViewCell else {
-             return UICollectionViewCell()
-         }
-         cell.set(model: .init(imageURL: item.imageStrURL, title: item.title))
-         return cell
-     }
+    func configureCell(dataSource: CollectionViewSectionedDataSource<CocktailSection>, collectionView: UICollectionView, indexPath: IndexPath, item: Cocktail) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(CocktailsCollectionViewCell.self), for: indexPath) as? CocktailsCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        cell.set(model: .init(imageURL: item.imageStrURL, title: item.title))
+        return cell
+    }
     
     func configureScrollView() {
         scrollView.layoutIfNeeded()
@@ -198,7 +199,7 @@ private extension ViewController {
     }
 }
 
-extension ViewController: UICollectionViewDelegate {
+extension MainViewController: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         segmentedControl.selectedSegmentIndex = Int(round(scrollView.contentOffset.x / view.frame.width))
     }
@@ -219,8 +220,8 @@ extension ViewController: UICollectionViewDelegate {
     }
 }
 
-extension ViewController: UISearchBarDelegate {
+extension MainViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        viewModel.searchQuerySubject.onNext(searchText)
+        //        viewModel.searchQuerySubject.onNext(searchText)
     }
 }

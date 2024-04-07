@@ -9,6 +9,7 @@ import Foundation
 import Moya
 
 // MARK: - CocktailsAPI
+
 enum CocktailsAPI: TargetType {
     
     case getCocktails(type: DrinkCategory)

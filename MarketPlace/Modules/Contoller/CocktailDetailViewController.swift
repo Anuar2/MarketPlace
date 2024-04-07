@@ -10,6 +10,8 @@ import Then
 import RxSwift
 import RxCocoa
 
+// MARK: - CocktailDetailViewController
+
 final class CocktailDetailViewController: BaseViewController {
     
     let cocktail: Cocktail
